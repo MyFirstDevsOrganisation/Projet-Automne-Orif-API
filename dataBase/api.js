@@ -1,9 +1,7 @@
 const db = require('./db');
 
 
-async function recupererVerbeAleatoirement() {}
-
-async function verifierReponse() {
+async function recupererVerbeAleatoirement() {
     const data = await db.conn(
         "SELECT * FROM verbe"
     );
@@ -14,7 +12,8 @@ async function verifierReponse() {
     };
 }
 
+
+
 module.exports = {
     recupererVerbeAleatoirement,
-    verifierReponse
 }

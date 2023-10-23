@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/recuperer-verbe-aleatoirement', async function(req, res, next) {
     try {
 
-        res.json({ message: 'test' });
+        res.json(await api.recupererVerbeAleatoirement());
     }
     catch(err){
         next(err);
@@ -17,13 +17,7 @@ router.get('/recuperer-verbe-aleatoirement', async function(req, res, next) {
 
 /* GET verifie si le verbe est correct. */
 router.get('/verifier-reponse', async function(req, res, next) {
-    try {
-
-        res.json(await api.verifierReponse());
-    }
-    catch(err){
-        next(err);
-    }
+   
 })
 
 
