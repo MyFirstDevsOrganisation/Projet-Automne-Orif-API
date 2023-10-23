@@ -8,6 +8,4 @@ async function recupererVerbeAleatoirement()
     return rows[0];
 }
 
-module.exports = {
-    recupererVerbeAleatoirement
-}
+module.exports = {recupererVerbeAleatoirement}
