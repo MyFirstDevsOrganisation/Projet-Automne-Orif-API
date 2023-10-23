@@ -17,3 +17,4 @@ app.use("/api",apiRouter);
 app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
 });
+app.use(api.recupererVerbeAleatoirement);
