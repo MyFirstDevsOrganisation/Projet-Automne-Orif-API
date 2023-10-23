@@ -15,10 +15,6 @@ router.get('/recuperer-verbe-aleatoirement', async function(req, res, next) {
     
 })
 
-/* GET verifie si le verbe est correct. */
-router.get('/verifier-reponse', async function(req, res, next) {
-   
-})
 
 
 
