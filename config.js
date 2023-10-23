@@ -5,6 +5,11 @@ const config = {
       user: "User_Projet_Automne_Orif",
       password: "Projet_Automne_Orif",
       database: "projet_automne_orif",
-    }
+    },
+    auth: {
+      api_key: '-jIPpeeKh+6nvRF',
+      
+  }
+
 }
 module.exports = config;
