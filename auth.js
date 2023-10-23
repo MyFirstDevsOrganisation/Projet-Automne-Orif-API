@@ -1,4 +1,4 @@
-const config = require('\config.js');
+const config = require('./config');
 const API_KEY = config.auth.api_key
 
 function verifyApiKey(req, res, next) {
@@ -8,4 +8,5 @@ function verifyApiKey(req, res, next) {
     }
     next();
   }
-  module.expports={verifyApiKey}
+
+module.exports = {verifyApiKey}
