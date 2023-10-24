@@ -10,11 +10,8 @@ app.use(
   })
 );
 app.use(auth.verifyApiKey);
-app.get("/", (req, res) => {
-  res.json({ message: "ok" });
-});
 app.use("/api",apiRouter);
 app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
 });
-app.use(api.recupererVerbeAleatoirement);
+
