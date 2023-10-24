@@ -7,16 +7,12 @@ const router = express.Router();
 router.get('/recuperer-verbe-aleatoirement', async function(req, res, next) {
     try {
 
-        res.json(await api.recupererVerbeAleatoirement());
+        const verbe = await api.recupererVerbeAleatoirement();
+        res.json(verbe);
     }
     catch(err){
         next(err);
     }
     
 })
-
-
-
-
-
 module.exports = router;

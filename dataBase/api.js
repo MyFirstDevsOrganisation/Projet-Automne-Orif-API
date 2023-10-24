@@ -1,19 +1,11 @@
 const db = require('./db');
 
 
-async function recupererVerbeAleatoirement() {
-    const data = await db.conn(
-        "SELECT * FROM verbe"
-    );
-
-   
-    return {
-        data,
-    };
+async function recupererVerbeAleatoirement() 
+{
+    const requete = "SELECT * FROM verbe ORDER BY RAND() LIMIT 1";
+    const data = await db.conn(requete);
+    return data;
 }
 
-
-
-module.exports = {
-    recupererVerbeAleatoirement,
-}
+module.exports = {recupererVerbeAleatoirement}
